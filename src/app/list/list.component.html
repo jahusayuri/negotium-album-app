@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-12">
+  </div>
+  <div class="col-xs-12">
+    <h2>ToDo/Tasks:</h2>
+    <a href="#" class="list-group-item clearfix" *ngFor="let list of todolist">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{list.taskName}}</h4>
+        <p class="list-group-item-text">{{list.description}}</p>
+      </div>
+    </a>
+    <br>
+    <button class="btn btn-success">New List</button>  
+  </div>
+</div>
